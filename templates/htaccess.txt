@@ -1,0 +1,16 @@
+### TNG_SSO ###
+### This section improves user experience when using the Single Sign On For TNG plugin.  DO NOT DELETE ###
+<IfModule mod_rewrite.c>
+
+RewriteCond %{REQUEST_URI} /^tngdir^/logout.php$
+RewriteCond %{QUERY_STRING} !^noredirect$ [NC]
+RewriteRule (.*) ^wpdir^wp-login.php?action=logout [L,R]
+
+RewriteCond %{REQUEST_URI} /^tngdir^/login.php$
+RewriteRule (.*) ^wpdir^wp-login.php [L,R]
+
+RewriteCond %{REQUEST_URI} /^tngdir^/newacctform.php$
+RewriteRule (.*) ^wpdir^wp-login.php?action=register [L,R]
+
+</IfModule>
+### END TNG_SSO ###

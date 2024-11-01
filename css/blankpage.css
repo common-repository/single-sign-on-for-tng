@@ -1,0 +1,10 @@
+/*  Style Sheet for the Single Sign On For TNG Form */
+/* Version: 1.0 */
+
+  body.custom-background {
+    background-color: white;
+  }
+  
+  #page-container {
+    display: none;
+  }

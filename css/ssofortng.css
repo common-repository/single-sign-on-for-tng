@@ -1,0 +1,19 @@
+/*  Style Sheet for the Single Sign On For TNG Form */
+/* Version: 1.0 */
+
+input[type=text].settings-input, input[type=password].settings-input {
+   	vertical-align: top;
+	width: 350px;
+}
+
+#secretgeneratorbutton {
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+label[for=cimy_uef_1] {
+    color: red !important;
+}
